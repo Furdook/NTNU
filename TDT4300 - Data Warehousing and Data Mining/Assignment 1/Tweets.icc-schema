@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schemaFactory revisionNumber="12">
+    <schemaDefinition name="Tweets" group="Assignment 1" loadOnStartup="false">
+        <activateIncrementalLoad>false</activateIncrementalLoad>
+        <useUnknownMembersInFacts>true</useUnknownMembersInFacts>
+        <autoCleanUpTableColumns>false</autoCleanUpTableColumns>
+        <useFactPartitioning>false</useFactPartitioning>
+        <memberPropertyConsistencyCheck>ACTIVE</memberPropertyConsistencyCheck>
+        <fileCSV directory="/root/data" checkColumnSize="false" name="Elon's Tweets" includeSynonyms="false" disableReadOnlyMode="false">
+            <csvDataTable csvseparator="," csvquotechar="&quot;" csvescape="\" csvstrictQuotes="false" csvignoreLeadingWhiteSpace="true" fileEncoding="UTF-8" tableName="TweetsElonMuskNew.csv" rowLimit="-1" id="729ce906-3b7f-468b-822e-c623dce76e7a">
+                <column name="id" tableType="STRING" type="LONG" selected="true" primaryKey="false"/>
+                <column name="conversation_id" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="created_at" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="date" tableType="STRING" type="DATE" selected="true" primaryKey="false"/>
+                <column name="time" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="timezone" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="user_id" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="username" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="name" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="place" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="tweet" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="language" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="mentions" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="urls" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="photos" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="replies_count" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="retweets_count" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="likes_count" tableType="STRING" type="INTEGER" selected="true" primaryKey="false"/>
+                <column name="hashtags" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="cashtags" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="link" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="retweet" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="quote_url" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="video" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="thumbnail" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="near" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="geo" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="source" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="user_rt_id" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="user_rt" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="retweet_id" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="reply_to" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="retweet_date" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="translate" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="trans_src" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="trans_dest" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="sentiment_score" tableType="STRING" type="FLOAT" selected="true" primaryKey="false"/>
+                <column name="sentiment" tableType="STRING" type="STRING" selected="false" primaryKey="false"/>
+                <column name="word_count" tableType="STRING" type="INTEGER" selected="true" primaryKey="false"/>
+                <addRowNumber>false</addRowNumber>
+                <stringDateConverter>yyyy-MM-dd</stringDateConverter>
+                <trimStrings>true</trimStrings>
+                <columnSeparator>,</columnSeparator>
+                <commentMarker>#</commentMarker>
+            </csvDataTable>
+        </fileCSV>
+        <timeWizardDimension isDefaultTimeDimension="false" isIndexingByRange="true" from="2010-06-04T00:00:00.000" to="2021-04-12T00:00:00.000" dataTableId="729ce906-3b7f-468b-822e-c623dce76e7a" id="37778eb2-9d0e-45fa-a5cf-53345444fe5d" name="Date">
+            <timeHierarchy hasAllLevel="true" allLevelName="" allMemberName="" name="Date" isDefault="true" uuid="2d2b52c8-05fb-48ea-8e54-60fb16ab3953">
+                <level uuid="64fd09cc-4b52-42b7-915b-eb64d72e2fba" name="Year" type="YEAR">
+                    <useRelativeKey>false</useRelativeKey>
+                </level>
+                <level uuid="9e567893-bfd6-4f97-aff5-56d5b90dcffe" name="Month" type="MONTH">
+                    <useRelativeKey>false</useRelativeKey>
+                </level>
+            </timeHierarchy>
+            <timeWizardColumn name="date"/>
+        </timeWizardDimension>
+        <cube id="7017a9d3-1742-4342-a0c6-ab63fb887692" name="Tweets Cube">
+            <defaultFacts uuid="d34e0f7e-37d7-4c2c-920f-cb4ac859ef9d" measureGroupName="Facts" partitioningType="NONE" newGeneration="true" dataTableId="729ce906-3b7f-468b-822e-c623dce76e7a" aggregateDataSourceFacts="false" unresolvedRowsBehavior="ERROR">
+                <rowFactAggregationType>ADD_ROW</rowFactAggregationType>
+                <measure uuid="92c20cee-00b8-40ad-b42a-442f109d5930" name="Like Count" aggregationType="SUM">
+                    <dataColumn name="likes_count"/>
+                </measure>
+                <measure uuid="0360c45c-b828-4407-bedd-3ef1484bc64e" name="Tweet Count" aggregationType="COUNT">
+                    <dataColumn name="id"/>
+                </measure>
+                <measure uuid="a63193d3-3815-4f3d-9422-60a456acae3f" name="Word Count" aggregationType="SUM">
+                    <dataColumn name="word_count"/>
+                </measure>
+                <measure uuid="77ebb613-75b5-47f6-98ee-3979e994654e" name="Average Sentiment" aggregationType="AVG_LEAVES">
+                    <dataColumn name="sentiment_score"/>
+                </measure>
+                <links dimensionId="37778eb2-9d0e-45fa-a5cf-53345444fe5d">
+                    <viewLinks type="LAST_LEVEL">
+                        <toColumns name="date"/>
+                    </viewLinks>
+                </links>
+            </defaultFacts>
+        </cube>
+        <localization enabled="false"/>
+        <colors enabled="false"/>
+        <script>
+            <content>-- 
+-- Drop all calc. members, sets and functions declared at schema/cube levels. 
+-- 
+
+DROP *
+
+
+-- 
+-- Functions 
+-- 
+
+-- 
+-- Sets. 
+-- 
+
+-- 
+-- Calculated Measures/Members. 
+-- 
+
+</content>
+        </script>
+    </schemaDefinition>
+</schemaFactory>

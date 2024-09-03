@@ -1,6 +1,6 @@
-# NTNU
+# Norwegian Univeristy of Science and Technology (NTNU)
 
-## Bachelor in Informatics (WO) - Norwegian Univeristy of Science and Technology
+## Bachelor in Informatics (WO)
 
 ### Mandatory courses:
 
