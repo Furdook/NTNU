@@ -1,0 +1,17 @@
+GET http://localhost:8080/getNotes
+
+###
+PUT http://localhost:8080/addNote
+
+title&note&red,blue
+
+###
+POST http://localhost:8080/editNote/3
+
+new&note&yellow
+
+###
+DELETE http://localhost:8080/deleteNote/2
+
+###
+DELETE http://localhost:8080/deleteNote/3
