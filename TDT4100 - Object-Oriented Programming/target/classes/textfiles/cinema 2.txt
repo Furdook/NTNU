@@ -1,0 +1,24 @@
+theatre1;Sal 1;90;null
+theatre2;Sal 2;80;null
+theatre3;Sal 3;110;null
+theatre4;Sal 4;50;null
+movie1;The Imitation Game;English;8
+movie2;Snowden;English;9
+movie3;Ex Machina;English;8
+movie4;I, Robot;English;8
+screening1;The Imitation Game;0;Sal 1
+screening2;The Imitation Game;35;Sal 2
+screening3;The Imitation Game;20;Sal 3
+screening4;The Imitation Game;15;Sal 4
+screening5;Snowden;10;Sal 1
+screening6;Snowden;0;Sal 2
+screening7;Snowden;35;Sal 3
+screening8;Snowden;30;Sal 4
+screening9;Ex Machina;20;Sal 1
+screening10;Ex Machina;10;Sal 2
+screening11;Ex Machina;0;Sal 3
+screening12;Ex Machina;40;Sal 4
+screening13;I, Robot;40;Sal 1
+screening14;I, Robot;25;Sal 2
+screening15;I, Robot;10;Sal 3
+screening16;I, Robot;0;Sal 4
