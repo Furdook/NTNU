@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App renders correctly 1`] = `null`;
+
+exports[`renders correctly 1`] = `null`;

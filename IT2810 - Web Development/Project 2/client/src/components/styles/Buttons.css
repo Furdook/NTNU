@@ -1,0 +1,61 @@
+.button {
+  position: absolute;
+  height: var(--button-height);
+  background-color: var(--clr-fill);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--clr-dark);
+  border-radius: var(--radius);
+  z-index: 1000;
+}
+
+.login-button,
+.profile-button {
+  /* margin-left: calc(100vw - 300px); */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  right: 2rem;
+  width: 100px;
+}
+
+.new-profile-button,
+.new-listing-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 175px;
+  /* margin-left: calc(100vw - 300px); */
+  right: 9rem;
+}
+
+.filter-button-all,
+.filter-button {
+  position: static;
+  width: 200px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .new-profile-button > span,
+  .new-listing-button > span,
+  .login-button > span,
+  .profile-button > span {
+    display: none;
+  }
+
+  .new-profile-button,
+  .new-listing-button {
+    right: 5rem;
+  }
+
+  .new-profile-button,
+  .new-listing-button,
+  .login-button,
+  .profile-button {
+    width: fit-content;
+    border-radius: 10;
+    padding: 0 0.5rem;
+  }
+}

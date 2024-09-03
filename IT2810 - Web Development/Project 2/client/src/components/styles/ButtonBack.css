@@ -1,0 +1,18 @@
+#buttonBack {
+  width: 100px;
+  height: var(--button-height);
+  border-radius: var(--radius);
+  border: 1.5px solid var(--clr-primary);
+  background-color: var(--clr-fill);
+  position: absolute;
+  margin-top: -2rem;
+  margin-inline: -2rem;
+  color: var(--clr-primary);
+  font-size: 1.1rem;
+
+  &:hover {
+    background-color: var(--clr-secondary);
+    cursor: pointer;
+    color: var(--clr-text);
+  }
+}

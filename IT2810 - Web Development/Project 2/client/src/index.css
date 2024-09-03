@@ -1,0 +1,24 @@
+:root {
+  /* Colour variables */
+  --clr-primary: #213555;
+  --clr-secondary: #4f709c;
+  --clr-fill: #e5dad0;
+  --clr-text: #f5efe7;
+
+  /* Fonts and colour theming */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light;
+  color: var(--clr-primary);
+  background-color: var(--clr-text);
+
+  /* Margin and padding variables */
+  --padding: 1rem;
+  --margin: 70px;
+  --feed-size: 845px;
+  --button-height: 40px;
+  --radius: 15px;
+}
+
+body {
+  margin: 0 auto;
+}

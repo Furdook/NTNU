@@ -1,0 +1,56 @@
+#search-form {
+  /* Fix bar to correct position udner Nav and center with margin-inline: auto */
+  max-width: var(--feed-size);
+  margin-inline: auto;
+  margin-top: 0;
+  padding-top: var(--padding);
+  padding-inline: 1rem;
+}
+
+#search-form__input {
+  /* Style ipnut field */
+  background-color: var(--clr-fill);
+  color: var(--clr-primary);
+  font-size: 1.1rem;
+
+  /* Remove padding from field*/
+  padding: 0;
+  padding-left: 1rem;
+
+  /* Sizing the input field */
+  width: calc(100% - 1rem);
+  height: var(--button-height);
+
+  /* Border styling */
+  border: 1px solid var(--clr-primary);
+  border-radius: var(--radius);
+}
+
+#search-form__button {
+  --field-width: 150px;
+  cursor: pointer;
+
+  /* Position button to right within the input field */
+  position: relative;
+  top: calc(2px - var(--button-height));
+  margin-left: calc(100% - var(--field-width) - 2px);
+
+  /* Size the button */
+  width: var(--field-width);
+  height: calc(var(--button-height) - 6px);
+
+  /* Styling the button */
+  border: none;
+  border-radius: calc(var(--radius) - 4px);
+  background-color: var(--clr-secondary);
+
+  /* Text formatting*/
+  color: var(--clr-text);
+  font-size: 1.2rem;
+
+  /* Hover effect */
+  transition: background-color 0.1s ease;
+  &:hover {
+    background-color: var(--clr-primary);
+  }
+}

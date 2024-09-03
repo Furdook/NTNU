@@ -1,0 +1,51 @@
+#header {
+  padding: 20px;
+  text-align: center;
+}
+
+#profilePage {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#pp {
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+  display: block;
+}
+
+#ppAndInfo {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: left;
+}
+
+#profileInfo {
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+#postings {
+  margin-top: 50px;
+  justify-content: center;
+}
+
+#post {
+  display: flex;
+  gap: 15px;
+  flex: 1 1 200px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#line {
+  width: 100%;
+  height: 2px;
+  background-color: #213555;
+  border-radius: 5%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}

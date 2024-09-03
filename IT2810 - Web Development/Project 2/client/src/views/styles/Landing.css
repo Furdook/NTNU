@@ -1,0 +1,86 @@
+#logoLanding {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+#categoriesLanding {
+  max-width: var(--feed-size);
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 200px;
+  padding-left: 0;
+  gap: 15px;
+  list-style: none;
+
+  @media screen and (max-width: 875px) {
+    padding-left: 1rem;
+  }
+}
+
+.cardLanding:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+}
+
+.cardLanding > div {
+  aspect-ratio: 1;
+  min-width: 200px;
+  background-color: var(--clr-fill);
+  border-radius: var(--radius);
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & img {
+    height: 60%;
+  }
+
+  @media screen and (max-width: 875px) {
+    width: calc(33vw - 19px);
+  }
+
+  @media screen and (max-width: 660px) {
+    width: calc(50vw - 24px);
+  }
+
+  transition: transform 0.1s ease;
+}
+
+#categoryLabel {
+  width: var(--feed-size);
+  margin-inline: auto;
+  line-height: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--clr-primary);
+
+  @media screen and (max-width: 875px) {
+    padding-left: 1rem;
+  }
+}
+
+#categorySeparator {
+  max-width: var(--feed-size);
+  border-color: var(--clr-primary);
+
+  @media screen and (max-width: 875px) {
+    margin-inline: 1rem;
+  }
+}
+
+.landingCategories {
+  position: absolute;
+  bottom: 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+}

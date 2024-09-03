@@ -1,0 +1,99 @@
+#postingPage {
+  padding: 20px;
+}
+
+.postingContainer {
+  background-color: var(--clr-fill);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  margin: auto;
+  max-width: 40rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.postingTitle {
+  font-size: 24px;
+  word-wrap: break-word;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: auto;
+  display: inline-block;
+}
+
+.postingDate {
+  font-size: 14px;
+  color: #999;
+  padding-top: 0px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+.postingDescription {
+  font-size: 18px;
+  margin-bottom: 10px;
+  max-width: 40rem;
+  word-wrap: break-word;
+}
+
+.postingPrice {
+  display: block;
+  font-size: 24px;
+  position: relative;
+  width: auto;
+  float: right;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.postingImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-inline: auto;
+  max-width: 30vw;
+}
+
+.postingNr {
+  font-size: 14px;
+  color: #999;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  float: right;
+}
+
+.postingArea {
+  font-size: 16px;
+  color: #999;
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+.postingCategory {
+  font-size: 16px;
+  color: #999;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 0;
+  display: block;
+  float: right;
+}
+
+.postingSegmentWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+
+.postingSegmentWrapperBottom {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.seperator {
+  width: 100%;
+}

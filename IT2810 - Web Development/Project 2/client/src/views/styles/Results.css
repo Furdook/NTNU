@@ -1,0 +1,59 @@
+main {
+  /* Center and size result field */
+  max-width: var(--feed-size);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+#results {
+  /* Create grid of listings */
+  display: inline-block;
+  display: flex;
+  gap: 15px;
+  flex: 1 1 200px;
+  flex-wrap: wrap;
+  margin-top: 8.5rem;
+}
+
+#result-info {
+  /* Revisit method */
+  margin-top: calc(2rem - var(--margin));
+
+  /* Poition results counter and sorting */
+  display: flex;
+  position: relative;
+  margin-inline: auto;
+  max-width: var(--feed-size);
+  padding-inline: 1rem;
+
+  /* Font styling */
+  & h3 {
+    font-weight: 300;
+  }
+
+  /* Move sort to right of feed */
+  & #sort-label {
+    flex-grow: 1;
+    text-align: right;
+  }
+}
+
+/* Style sorting drop down menu */
+#sort-options {
+  margin: auto;
+  font-size: 1.1rem;
+  color: var(--clr-primary);
+  border: none;
+  padding-inline: 2rem;
+  margin-left: 1rem;
+  background-color: var(--clr-fill);
+  height: calc(var(--button-height) - 8px);
+  border-radius: var(--radius);
+}
+
+#no-results {
+  color: var(--clr-secondary);
+  text-align: center;
+  margin-top: 5rem;
+  width: 100%;
+}

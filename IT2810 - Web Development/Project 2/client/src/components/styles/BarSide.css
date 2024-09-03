@@ -1,0 +1,140 @@
+/* New listing and profile button to make visible in collapsed menu won small screen sizes*/
+#filters > .profile-button {
+  margin-top: 1.7rem;
+  margin-left: 4.5rem;
+  display: none;
+}
+
+#filters > .new-listing-button {
+  margin-top: 5rem;
+  margin-left: 1.8rem;
+  display: none;
+}
+
+#filters > .login-button {
+  margin-top: 1.7rem;
+  margin-left: 4.5rem;
+  display: none;
+}
+
+#filters > .new-profile-button {
+  margin-top: 5rem;
+  margin-left: 1.8rem;
+  display: none;
+}
+
+/* Filters menu background */
+#filters::before {
+  content: "";
+  position: fixed;
+  background-color: var(--clr-primary);
+  height: 200vh;
+  width: 250px;
+  z-index: -1;
+  margin-top: calc(0rem - var(--margin) * 2);
+}
+
+#filters {
+  /* Size and fill colour of sidebar */
+  width: 250px;
+  color: var(--clr-text);
+  margin-top: calc(0rem - var(--margin) * 2);
+
+  /* Stick filters when last filter is visible to always keep in view */
+  position: sticky;
+  top: -20rem;
+
+  /* Create space between checkboxes and label text */
+  & label {
+    padding-left: 0.3rem;
+  }
+
+  /* Changes option text colour when checkbox is checked */
+  & input:checked + label {
+    color: var(--clr-secondary);
+  }
+
+  /* Style text in sidebar */
+  & h3 {
+    padding: var(--padding);
+    margin: 0;
+    font-weight: 300;
+  }
+
+  /* Style filter lists */
+  & ul {
+    padding-left: 0.7rem;
+    list-style: none;
+    font-weight: 200;
+
+    /* Change label colour on hover and make whole field clickable */
+    & li:hover {
+      color: var(--clr-secondary);
+      cursor: pointer;
+    }
+
+    & label:hover {
+      cursor: pointer;
+    }
+  }
+
+  /*Filter category seperator line*/
+  & hr {
+    margin: 0;
+    border-radius: var(--radius);
+    border: 1px solid var(--clr-text);
+    margin-left: 1rem;
+    width: 180px;
+  }
+
+  & button {
+    color: var(--clr-primary);
+  }
+
+  /* Collapse sidebar when screen size gets too small */
+  transition: transform 0.2s ease;
+  @media screen and (max-width: 1350px) {
+    /* Make profile and new listing button visible */
+    & > .profile-button {
+      display: flex;
+      width: 175px;
+      margin-left: 2.3rem;
+      margin-right: 1.6rem;
+      right: 1.4rem;
+    }
+
+    & > .new-listing-button {
+      display: flex;
+      margin-left: 10rem;
+      margin-top: 5rem;
+      right: 3rem;
+    }
+
+    & > .login-button {
+      display: flex;
+      width: 175px;
+      margin-left: 2.3rem;
+      margin-right: 1.6rem;
+      right: 1.4rem;
+    }
+
+    & > .new-profile-button {
+      display: flex;
+      width: 175px;
+      margin-left: 10rem;
+      margin-top: 5rem;
+      right: 3rem;
+    }
+  }
+}
+
+#filters__form {
+  position: absolute;
+  margin-top: 7rem;
+  padding-left: 1rem;
+
+  /* Move form up to account for profile and new listing button not being present at large screen sizes */
+  @media screen and (min-width: 1350px) {
+    transform: translateY(-6.5rem);
+  }
+}

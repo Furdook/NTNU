@@ -1,0 +1,48 @@
+.posting-card {
+  position: relative;
+  background-color: var(--clr-fill);
+  aspect-ratio: 1;
+  min-width: 200px;
+  border-radius: var(--radius);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+
+  @media screen and (max-width: 875px) {
+    width: calc(33vw - 19px);
+  }
+
+  @media screen and (max-width: 660px) {
+    width: calc(50vw - 24px);
+  }
+
+  transition: transform 0.1s ease;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+  }
+}
+
+.card__info {
+  background-color: var(--clr-secondary);
+  opacity: 0.9;
+  width: calc(100% - 2rem);
+  border-radius: 0 0 var(--radius) var(--radius);
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.card__title {
+  color: var(--clr-text);
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: -0.5rem;
+}
+
+.card__price {
+  color: var(--clr-text);
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
