@@ -1,0 +1,6 @@
+﻿Assignment 4 - Questions
+
+
+1. Autoplay is often ignored by mobile browsers to ensure it doesn’t use unnecessary bandwidth and power without the user accepting so.
+2. If a visitor with a resolution of 320x568 enters the website with this particular media query, nothing should be affected by it. This is because the query is set to only affect devices with a width between 768px and 1024px.
+3. Advantages of using a single site rather than a separate one for mobile is firstly the lack of needing to maintain two separate sites, as well as making it harder for search engines to tell if your sites are the same or not. Also, there most likely would be some content or functionality lost on a separate mobile website compared to it’s desktop counterpart.

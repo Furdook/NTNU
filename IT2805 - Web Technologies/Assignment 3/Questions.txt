@@ -1,0 +1,7 @@
+﻿Assignment 3 Questions
+
+
+1. The difference between position:fixed and position:absolute is how they react when you scroll the page. Absolute elements become their own and are taken out of the elements around it, when you scroll the window the element will follow. It will not affect any other elements in the document as well since it has been taken out of normal flow.. The fixed position will try to hold the element in place where you placed it on screen, so that when you scroll it stays fixed in place.
+2. To choose and affect the third element within a different element in CSS3 we can use the nth-child() pseudo-selector. That could look something like this: p:nth-child(3){
+/*Do stuff*/
+}

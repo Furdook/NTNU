@@ -1,0 +1,8 @@
+﻿Assignment 2 Questions
+
+
+1. As inline CSS is written in the HTML itself, it’s only natural that it has a higher priority than an external file, in most cases style.css. The method is not preferred however as it only affects the one line it’s inlined in, as well as overriding any other css which could be troublesome when debugging or altering.
+2. As ID and classes are quite similar the differences aren’t too big; the main difference being how many elements who can share them. In a case of titles using ID might be better as there usually is only one. Classes however, can have as many elements as you please under them and will apply CSS styles over them all. This could be especially useful when for example adding several buttons to the page.
+3. RGBA is used to express colours. Similar to RGB it uses the same three base colours of light, but then adding another parameter which is the alpha or the opacity if you will, giving a wide range of colours to pick from. 
+4. CSS is typically added to the <head> element of the HTML to make sure it is loaded before the body and improves rendering times.
+5. article > p should be the right selector to make sure only the <p> inside of <article> will be affected by the following CSS code.

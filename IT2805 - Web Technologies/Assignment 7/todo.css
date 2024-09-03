@@ -1,0 +1,48 @@
+body {
+    background-color: #15202b;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: auto;
+}
+input {
+    background-color:#2f4153;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px; 
+}
+ul {
+    list-style: none;
+    line-height: 25px;
+}
+.done {
+    text-decoration: line-through;
+}
+div {
+    background-color: #2f415341;
+    border-radius: 20px;
+    width: 550px;
+    margin: auto;
+    padding-bottom: 5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.20) ;
+}
+#todo {
+    width: 90%;
+    padding: 12px;
+    margin: 15px;
+}
+button {
+    width: 94%;
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: #2f4153;
+    color: white;
+    font-size: 16px;
+}
+output {
+    margin: 49%;
+}

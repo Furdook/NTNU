@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <div class="box changes">
+        <h1>Changes</h1>
+        <hr>
+        <h3>Visual Changes</h3>
+        <ol>
+            <li>
+                <p>Background Image was changed. On longer pages the image from the design plan would be asymmetric</p> 
+                <p><strike>Page_design2.PNG</strike> => bg_light.jpg</p>
+                <p><strike>Page_design_dark</strike> => bg_dark.jpg</p>
+            </li>
+            <li>
+                <p>Font type was changed. The last font wouldn't load properly and when it did it wasn't readable.</p>
+                <p><strike>font-family:"sendha";</strike> => Arial, Helvetica, sans-serif on all p-tags and h1-tags</p>
+                <p><strike>font-family:"sendha";</strike> => 'Courier New', Courier, monospace on all h2-tags to separate out page headers</p>
+            </li>
+            <li>
+                <p>Sidebar is changed. The color was too easy to overlook and it got a new alternative (Dark/Light mode) since the placement of this
+                    function wasn't specified in the design plan.</p>
+                <p>Light Mode: <strike>color:lightgray;</strike> => color:black;</p>
+                <p>Dark Mode: <strike>not specified</strike> => color:rgba(100,0,0,0.9)</p>
+                <p>Sidebar Items: <strike>History, Favorites</strike> => History, Favorites, Dark/Light Mode</p>
+            </li>
+            <li>
+                <p>Cards layout is changed. The pyramid model for the cards layout was flawed because the cards at the bottom at the pyramid were too 
+                    small to be read.</p>
+                <p>Cards Layout: <strike>Pyramid Model</strike> => Model of 1 large card, then 2 small cards, repeated.</p>
+            </li>
+        </ol>
+            <hr>
+            <h3>JavaScript Changes</h3>
+        <ol>
+            <li>
+                <p>hover_menu.js, dark_mode.js are now functions within script.js. This is to increase modularity.</p>
+            </li>
+            <li>
+                <p>fetch_bot.js is changed. APIs weren't allowed, so we replaced this function with the favorite function</p>
+                <p><strike>fetch_bot.js</strike> => folder: local_favs_scripts, file: genereate_favorite_table</p>
+                <p>The folder contains a unique script for each HTML page to store locally from.</p>
+            </li>
+            <li>
+                <p>search_bar.js is changed. We lost group members unannounced and therefore also capacity. This was changed to history/log function to finish the project faster</p>
+                <p><strike>search_bar.js</strike> => folder: local_log_scripts, file: genereate_history_table</p>
+                <p>The folder contains a unique script for each HTML page to store locally from.</p>
+            </li>
+        </ol>
+        <hr>
+        <h3>structure change</h3>
+        <ol>
+            <li>
+                <p>style.css has changed name and directory position. This is to enhance directory structure and give it a more fitting name</p>
+                <p><strike>style.css</strike> => stylesheets/main.css</p>
+            </li>
+            <li>
+                <p>circuit_head.ico has changed name and directory position. This is to enhance directory structure and give it a more fitting name</p>
+                <p><strike>circuit_head.ico</strike> => images/favicon.png</p>
+            </li>
+        </ol>
+        <hr>
+        <h3>Group members and resposibilites</h3>
+        <p>Due to a cut in group members, we had new resposibilites as follows.</p>
+        <table>
+            <tr>
+                <th>Filename</th>
+                <th>Description</th>
+                <th>In charge</th>
+            </tr>
+            <tr>
+                <td>homepage.html</td>
+                <td>The main page with mixed feeds.</td>
+                <td>Timon</td>
+            </tr>
+            <tr>
+                <td>homepage.html</td>
+                <td>The main page with mixed feeds.</td>
+                <td>Timon</td>
+            </tr>
+            <tr>
+                <td>software.html</td>
+                <td>The page with software news</td>
+                <td>Timon</td>
+            </tr>
+            <tr>
+                <td>hardware.html</td>
+                <td>The page with hardware news</td>
+                <td>Timon</td>
+            </tr>
+            <tr>
+                <td>games.html</td>
+                <td>The page with games news</td>
+                <td>Timon</td>
+            </tr>
+            <tr>
+                <td>about us.html</td>
+                <td>The page with information about us</td>
+                <td>Timon</td>
+            </tr>
+            <tr>
+                <td>contact us.html</td>
+                <td>The page where you can contact us</td>
+                <td>Timon</td>
+            </tr>
+            <tr>
+                <td>History.html</td>
+                <td>The page history table</td>
+                <td>Erlend</td>
+            </tr>
+            <tr>
+                <td>Favorites.html</td>
+                <td>The page with favorite news</td>
+                <td>Erlend</td>
+            </tr>
+            <tr>
+                <td>dark_mode.js</td>
+                <td>dark_mode function</td>
+                <td>Erlend</td>
+            </tr>
+            <tr>
+                <td>hover_menu.js</td>
+                <td>sidebar that appears when hovered</td>
+                <td>Erlend, Timon</td>
+            </tr>
+            <tr>
+                <td>generate_history_table.js</td>
+                <td>Generate a table with all clicked articles</td>
+                <td>Erlend</td>
+            </tr>
+            <tr>
+                <td>genereate_favorite_table.js</td>
+                <td>Generate a table with all favorite articles</td>
+                <td>Erlend</td>
+            </tr>
+            <tr>
+                <td>main.css</td>
+                <td>The stylesheet for the entire project</td>
+                <td>Erlend, Timon</td>
+            </tr>
+            <tr>
+                <td>favicon.png</td>
+                <td>Website Icon</td>
+                <td>Timon</td>
+            </tr>
+            <tr>
+                <td>heart_border.svg, heart_border.svg</td>
+                <td>Heart button</td>
+                <td>Timon</td>
+            </tr>
+            <tr>
+                <td>modularity</td>
+                <td>Individual JavaScript files were merged into script.js</td>
+                <td>Timon</td>
+            </tr>
+            <tr>
+                <td>modularity</td>
+                <td>Individual css files were merged into main.css</td>
+                <td>Erlend</td>
+            </tr>
+            <tr>
+                <td>modularity</td>
+                <td>Code compacting/cleanup</td>
+                <td>Timon</td>
+            </tr>
+        </table>
+        <style>  
+            body {
+                background-color: linen;
+            }
+            .box {
+                padding: 20px;
+                border: 2px solid maroon;
+                width: 50%;
+            }
+            .box h1, .box h3{
+                text-align: center;
+            }
+            table, th, td {
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
+            td {
+                padding: 4px;
+            }
+           </style>
+   </div>
+</body>
+</html>
