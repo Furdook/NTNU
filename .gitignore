@@ -1,1 +1,9 @@
+# Ignore macOS directory file
 .DS_Store
+
+# Ignore maven build files
+*/target/
+
+# Ignore currently take courses
+GEOG1012 - Geographical Information Systems
+TDT4175 - Information Systems
