@@ -1,0 +1,77 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .icon {
+    @apply h-fit rounded-lg border-none shadow-none dark:fill-white-100;
+  }
+}
+html {
+  --primary-100: #ffffff;
+  --primary-200: #fbfbfb;
+  --primary-300: rgba(255, 255, 255, 0.8);
+  --text: #001e1e;
+}
+
+.dark {
+  --primary-200: #001e1e;
+  --primary-100: #00312f;
+  --primary-300: rgba(0, 49, 47, 0.8);
+  --text: #ffffff;
+}
+
+body {
+  background-color: var(--primary-200);
+  color: var(--text);
+}
+
+/* top rounding when navigation item is selected */
+.nav_item__rounded[aria-expanded='true']::before {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  background-color: #00312f;
+  right: 0;
+  top: -1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: var(--primary-200) 1rem 1rem 0 1rem;
+}
+
+/* bottom rounding when navigation item is selected */
+.nav_item__rounded[aria-expanded='true']::after {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  background-color: #00312f;
+  right: 0;
+  bottom: -1rem;
+  border-top-right-radius: 1rem;
+  box-shadow: var(--primary-200) 1rem -1rem 0 1rem;
+}
+
+/* Style for all scrollbars */
+::-webkit-scrollbar {
+  width: 0.75rem; /* width of the entire scrollbar */
+  height: 0.75rem; /* height of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-accent-400); /* color of the track */
+  border-radius: 0.75rem; /* roundness of the track */
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dfdfdf; /* color of the scroll thumb */
+  border-radius: 0.75rem; /* roundness of the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e2e2e2; /* color of the scroll thumb */
+}
