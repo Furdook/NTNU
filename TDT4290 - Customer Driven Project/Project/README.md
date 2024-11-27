@@ -1,3 +1,5 @@
+### [The original repository with history can be viewed here](https://github.com/EliHaugu/liltest)
+
 # lildog-kundestyrt
 
 ## How to run frontend
